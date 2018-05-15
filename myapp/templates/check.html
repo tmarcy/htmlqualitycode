@@ -1,0 +1,23 @@
+{% extends "default.html" %}
+
+{% block title %}check URL {% endblock %}
+
+{% block content %}
+
+<h3>Please, insert the site complete URL below:</h3>
+
+<form method="post" action="/check">
+    {{form.csrf_token}}
+    <div>{{form.site_url.label}}: {{form.site_url}}</div>
+    {% if form.site_url.errors %}
+    <ul class = "error">
+        {% for e in form.site_url.errors %}
+        <li> {{e}} </li>
+        {% endfor %}
+    </ul>
+    {% endif%}
+
+    <div>{{form.submit}}</div>
+</form>
+
+{% endblock  %}
