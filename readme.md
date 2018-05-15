@@ -21,7 +21,7 @@ Add a lib folder to the project, in which you have to install the libraries list
 
 ## Built With
 
-* [Google App Engine](https://cloud.google.com/appengine/doc) - Platform used
+* [Google App Engine](https://cloud.google.com/appengine) - Platform used
 * [Flask](http://flask.pocoo.org/) - The microframework for Python used
 * [W3C-Markup Validation Service](https://validator.w3.org/) - API used
 * [IP Geolocation](https://ip2country.info/) - API used
